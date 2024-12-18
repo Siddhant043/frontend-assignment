@@ -1,5 +1,4 @@
 import styles from "./navbar.module.css";
-import { BsFillSunFill } from "react-icons/bs";
 import LogoLight from "../../assets/logo-light.svg";
 import { BsGithub } from "react-icons/bs";
 
