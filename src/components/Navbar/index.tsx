@@ -1,17 +1,18 @@
 import styles from "./navbar.module.css";
 import { BsFillSunFill } from "react-icons/bs";
 import LogoLight from "../../assets/logo-light.svg";
+import { BsGithub } from "react-icons/bs";
 
 const Navbar = () => {
-  const changeTheme = () => {};
   return (
     <div className={styles.container}>
       <img src={LogoLight} alt="SaaSLabs" width={40} />
-      <BsFillSunFill
-        className={styles.themeSwitchIcon}
-        color="white"
-        onClick={changeTheme}
-      />
+      <a
+        href="https://github.com/Siddhant043/saaslabs-assignment"
+        target="_blank"
+      >
+        <BsGithub className={styles.icon} />
+      </a>
     </div>
   );
 };

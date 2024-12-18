@@ -27,6 +27,13 @@
     text-align: left;
 }
 
+.tableHeaderText:nth-child(1){
+    border-radius: 0.5rem 0 0 0.5rem ;
+}
+.tableHeaderText:nth-child(3){
+    border-radius: 0 0.5rem 0.5rem 0 ;
+}
+
 .tableBody {
     background-color: var(--background-color-dark-secondary);
 }

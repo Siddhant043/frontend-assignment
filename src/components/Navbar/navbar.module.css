@@ -12,3 +12,13 @@
     height: 2rem;
     cursor: pointer;
 }
+a{
+    all:unset
+}
+
+.icon{
+    padding: 0 1rem;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
