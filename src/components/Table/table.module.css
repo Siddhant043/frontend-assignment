@@ -1,0 +1,48 @@
+.container {
+    background-color: var(--background-color-dark-secondary);
+    min-width: 40rem;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.tableHeaderContainer {
+    background-color: var(--background-color-dark-table-header);
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.tableHeaderText {
+    padding: 0.75rem 1rem;
+    color: var(--background-color-light-secondary);
+    font-weight: 300;
+    text-align: left;
+}
+
+.tableBody {
+    background-color: var(--background-color-dark-secondary);
+}
+
+.tableRowItem {
+    padding: 0.75rem 1rem;
+    color: var(--background-color-light-primary);
+    font-weight: 300;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.addColumn{
+    padding: 0.75rem 1rem;
+    color: var(--background-color-light-secondary);
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+}

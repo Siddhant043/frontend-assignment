@@ -1,0 +1,27 @@
+:root {
+  font-family: "DM Sans";
+    --primary-color:#FF6500;
+    --primary-color-hover:#FF8D43;
+  
+    --background-color-dark-primary:#0F0F0F;
+    --background-color-dark-secondary:#171717;
+
+    --background-color-dark-table-header: #2D2D2D;
+  
+    --background-color-light-primary:#FBFBFB;
+    --background-color-light-secondary:#EEEEEE;
+  
+    --text-color-light-primary:#fff;
+    --text-color-light-secondary:#B1B1B1;
+    --text-color-dark-primary:#000;
+    --text-color-dark-secondary:#B1B1B1;
+
+    --border-color: #2e2e2e;
+}
+
+body {
+  width: full;
+  padding: 0 2rem;
+  background-color: var(--background-color-dark-primary) ;
+  color: var(--text-color-light-primary);
+}
