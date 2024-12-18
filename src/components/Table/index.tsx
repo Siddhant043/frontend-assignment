@@ -31,7 +31,7 @@ const Table = () => {
     if (currentPage < totalPages) setCurrentPage((prevPage) => prevPage + 1);
   };
 
-  if (!isLoading) return <Loader />;
+  if (isLoading) return <Loader />;
   if (error) return <p>Error loading data: {error.message}</p>;
 
   return (
