@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./table.module.css";
 import { useProjectData } from "../../lib/api/projects/hooks";
 import { getMappedKey } from "../../utils/getMappedKeys";
@@ -8,8 +8,13 @@ import { getModifiedRowData } from "../../utils/getModifiedRowData";
 import { ProjectFetchedType } from "../../lib/api/projects/types";
 
 const Table = () => {
-  const { data = [], isLoading, error } = useProjectData(); // Default data to an empty array
-  const [headers] = useState(["s.no", "percentage.funded", "amt.pledged"]);
+  const { data = [], isLoading, error } = useProjectData();
+  const headers: (keyof ProjectFetchedType)[] = [
+    "s.no",
+    "percentage.funded",
+    "amt.pledged",
+  ];
+
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 5;
 
@@ -48,7 +53,7 @@ const Table = () => {
               key={row["s.no"] || startIndex + index}
               className={styles.tableRowWrapper}
             >
-              {headers.map((header) => (
+              {headers.map((header: keyof ProjectFetchedType) => (
                 <td
                   key={`${row["s.no"] || startIndex + index}-${header}`}
                   className={styles.tableRowItem}

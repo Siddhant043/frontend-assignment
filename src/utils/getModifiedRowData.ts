@@ -2,7 +2,7 @@ import { ProjectFetchedType } from "../lib/api/projects/types";
 
 export const getModifiedRowData = (
   row: ProjectFetchedType,
-  header: keyof ProjectFetchedType | string
+  header: keyof ProjectFetchedType
 ) => {
   let rowData = row[header] !== undefined ? row[header] : "-";
 
