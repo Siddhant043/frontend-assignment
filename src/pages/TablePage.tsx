@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./tablepage.module.css";
 import Heading from "../components/Heading";
 import Table from "../components/Table";
