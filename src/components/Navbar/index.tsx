@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <img src={LogoLight} alt="SaaSLabs" width={40} />
       <a
-        href="https://github.com/Siddhant043/saaslabs-assignment"
+        href="https://github.com/Siddhant043/frontend-assignment/tree/main"
         target="_blank"
       >
         <BsGithub className={styles.icon} />
