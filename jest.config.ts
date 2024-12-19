@@ -10,6 +10,11 @@ const config: Config = {
     "^.+\\.(ts|tsx)$": "ts-jest",
   },
   setupFilesAfterEnv: ["<rootDir>/setupTests.ts"],
+  globals: {
+    "ts-jest": {
+      tsconfig: "tsconfig.app.json",
+    },
+  },
 };
 
 export default config;
